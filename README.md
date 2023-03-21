@@ -4,6 +4,7 @@ The original code is from https://github.com/seletz/myhdl-test.git
 
 Little changes so far, except porting to Python 3.
 
+Below the origina README ( https://github.com/seletz/myhdl-test.git )
 
 myhdl-test
 ==========
