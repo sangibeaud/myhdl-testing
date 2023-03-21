@@ -1,3 +1,10 @@
+# myhdl-testing
+This repo is for testing myhdl in CI or other automation.
+The original code is from https://github.com/seletz/myhdl-test.git
+
+Little changes so far, except porting to Python 3.
+
+
 myhdl-test
 ==========
 
@@ -78,4 +85,3 @@ assign dout = mem[addr];
 
 endmodule
 ```
-# myhdl-testing
