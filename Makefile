@@ -13,7 +13,9 @@ clean:
 
 tests:
 	python -m pytest
-	echo "pytest module has now replace nosetests (nosetests --with-isolation)"
+	echo "pytest module has now replaced nosetests"
+	echo "  was : nosetests --with-isolation"
+	echo "  now : python -m pytest"
 
 hdl: tests register.v mux2.v mem.v
 
