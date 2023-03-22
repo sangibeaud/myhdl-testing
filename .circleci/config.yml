@@ -38,7 +38,6 @@ jobs:
           key: deps1-{{ .Branch }}-{{ checksum "requirements.txt" }}
       - run:
           command: |
-            if [ -f Makefile ] ; then make -f Makefile tests ; else echo "No Makefile" ; fi
             python3 -m venv venv
             . venv/bin/activate
             pip install -r requirements.txt
@@ -52,6 +51,7 @@ jobs:
           name: Running tests
           command: |
             . venv/bin/activate
+            if [ -f Makefile ] ; then make -f Makefile tests ; else echo "No Makefile" ; fi
             python3 -m pytest | tee test-reports/pytest.log
       - store_artifacts:
           path: test-reports/
