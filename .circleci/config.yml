@@ -88,6 +88,7 @@ workflows:
   workflow:
     jobs:
 #    - build
+    - makefile 
     - pytest
 #    - submodule
   
