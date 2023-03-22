@@ -3,6 +3,7 @@ jobs:
   pytest:
     docker:
       - image: cimg/python:3.10.1
+    resource_class: small 
     steps:
       - checkout
       - restore_cache:
